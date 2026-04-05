@@ -1,11 +1,17 @@
+<div align="center">
+
 # psych. 🧠
 ### *Bridging the gap between Computational Logic and Human Behavior.*
 
-https://n30ex.github.io/Pysch./ 
+[**🚀 View Live Demo**](https://yourusername.github.io/psych/)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+</div>
+
+---
 
 **psych.** is a high-fidelity, minimalist web application designed for standardized psychometric assessment. Developed by a **B.Tech CS student with a minor in Psychology**, this platform serves as a technical proof-of-concept for how modern UI/UX can improve the accuracy and engagement of clinical self-reporting.
 
@@ -61,26 +67,19 @@ $$P(\theta) = \frac{1}{1 + e^{-a(\theta - b)}}$$
 
 ---
 
-## 🔮 Future Roadmap: Digital Psychology
-The following features are planned to further the intersection of CS and Psych:
+## 🕹️ How to Use (User Guide)
 
-* **Radar Chart Visualizations:** Integrating Chart.js to provide users with a visual "Psychological Fingerprint" for the OCEAN and PEN models.
-* **Factor Analysis Integration:** Moving from simple cumulative scoring to weighted scoring based on statistical factor loading.
-* **EMA (Ecological Momentary Assessment):** Transforming the app into a Progressive Web App (PWA) to allow users to track psychological states in "real-time" throughout the day.
-* **Longitudinal Analytics:** Implementing local storage encryption to allow users to see their progress over weeks or months of recovery and integration.
+The platform is designed to be intuitive, but follows a specific clinical workflow:
 
----
+1.  **Launch the App:** Click the [**Live Demo**](https://N30Ex.github.io/Pysch./) link above or open `index.html` locally.
+2.  **Enter the Workspace:** On the "Ambient Aurora" splash screen, click **"Start"** to transition to the main assessment dashboard.
+3.  **Choose an Assessment:** Click on any test card (e.g., GAD-7, PHQ-9, or BFI-10). 
+    * *Note:* If you select the **TIS-40**, you must read and accept the **Ethical Disclaimer** before the test begins.
+4.  **Complete the Test:** * **Slider Scales:** Drag the slider to the position that best describes your experience. The UI will update the labels (e.g., "Rarely" to "Always") in real-time.
+    * **Binary Toggles:** For tests like the EPQ-R, simply click **Yes** or **No**.
+5.  **View Your Results:** Once the final question is answered, the engine calculates your score (handling reverse-coded items automatically) and displays your clinical category and summary.
+6.  **Reset:** Click **"Return Home"** to clear your current session data and try a different module.
 
-## 🕹️ How to Use
-The **psych.** platform is designed for a frictionless, "Flow State" user experience.
-
-1.  **Initialize the Core:** Click the **"Enter Workspace"** button to transition from the ambient intro screen to the assessment dashboard.
-2.  **Select a Module:** Choose from the grid of validated scales. Note that high-sensitivity modules (like the TIS-40) will trigger a mandatory ethical disclaimer before beginning.
-3.  **Responsive Assessment:**
-    * **Likert Scales:** Use the fluid slider to indicate frequency or agreement. The UI dynamically rounds continuous input to discrete integers for scoring accuracy.
-    * **Binary Inventories:** For EPQ-R or RIASEC, use the high-contrast **Yes/No** toggles for rapid-fire interest mapping.
-4.  **Real-Time Progress:** Monitor the top-mounted progress bar to maintain engagement throughout longer inventories.
-5.  **Analyze Results:** Upon completion, the engine runs a localized calculation script to provide immediate categorical insights and clinical descriptions.
 
 ---
 
@@ -117,6 +116,16 @@ If you are experiencing a mental health crisis, or if this application triggers 
 * **Scoring Logic:** Enhancing the `calculate` functions with weighted factor loading or normative data comparisons.
 * **TIS-40 Feedback:** Providing peer review or data-driven suggestions for the refinement of the TIS-40 items.
 * **Ethical Review:** Ensuring all instructions maintain a high standard of clinical empathy and safety.
+
+---
+
+## 🔮 Future Roadmap: Digital Psychology
+The following features are planned to further the intersection of CS and Psych:
+
+* **Radar Chart Visualizations:** Integrating Chart.js to provide users with a visual "Psychological Fingerprint" for the OCEAN and PEN models.
+* **Factor Analysis Integration:** Moving from simple cumulative scoring to weighted scoring based on statistical factor loading.
+* **EMA (Ecological Momentary Assessment):** Transforming the app into a Progressive Web App (PWA) to allow users to track psychological states in "real-time" throughout the day.
+* **Longitudinal Analytics:** Implementing local storage encryption to allow users to see their progress over weeks or months of recovery and integration.
 
 ---
 
