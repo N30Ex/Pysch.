@@ -10,7 +10,7 @@
 ---
 
 ## 💎 The Flagship: TIS-40 (Trauma Integration Scale)
-**Developed and Authored by [Your Name]**
+**Developed and Authored by [Aryan R]**
 
 The **TIS-40** is the centerpiece of this application—an original 40-item psychometric instrument designed to measure how individuals integrate difficult life experiences into their current identity. Unlike standard trauma checklists that focus solely on symptom severity, the TIS-40 evaluates the **degree of integration** across four distinct clinical domains:
 
