@@ -3,7 +3,7 @@
 # psych. 🧠
 ### *Bridging the gap between Computational Logic and Human Behavior.*
 
-[**🚀 View Live Demo**](https://yourusername.github.io/psych/)
+[**🚀 View Live Demo**](https://n30ex.github.io/Pysch./)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -71,7 +71,7 @@ $$P(\theta) = \frac{1}{1 + e^{-a(\theta - b)}}$$
 
 The platform is designed to be intuitive, but follows a specific clinical workflow:
 
-1.  **Launch the App:** Click the [**Live Demo**](https://N30Ex.github.io/Pysch./) link above or open `index.html` locally.
+1.  **Launch the App:** Click the [**Live Demo**](https://n30ex.github.io/Pysch./) link above or open `index.html` locally.
 2.  **Enter the Workspace:** On the "Ambient Aurora" splash screen, click **"Start"** to transition to the main assessment dashboard.
 3.  **Choose an Assessment:** Click on any test card (e.g., GAD-7, PHQ-9, or BFI-10). 
     * *Note:* If you select the **TIS-40**, you must read and accept the **Ethical Disclaimer** before the test begins.
