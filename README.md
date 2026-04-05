@@ -133,5 +133,5 @@ If you are experiencing a mental health crisis, or if this application triggers 
 
 ---
 
-**Developed with 🤍 by [Your Name]**
+**Developed with 🤍 by [Aryan R]**
 *B.Tech Computer Science | Minor in Psychology*
