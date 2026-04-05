@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pysch. | Clinical Assessments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+
+    <div id="intro-screen" class="screen active">
+        <div class="intro-content">
+            <h1 class="logo-hero">pysch.</h1>
+            <p class="subtitle">Standardized Cognitive & Behavioral Analytics.</p>
+            <button id="start-btn" onclick="enterApp()">
+                <div class="icon-circle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="app-container" class="screen hidden">
+        
+        <div id="home-screen" class="sub-screen active">
+            <div class="ribbon-header">
+                <h2 id="main-app-name" class="app-header">pysch.</h2>
+            </div>
+            <div id="test-grid"></div>
+        </div>
+
+        <div id="quiz-screen" class="sub-screen hidden">
+            <div class="header-bar">
+                <button class="back-btn" onclick="returnHome()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    Back
+                </button>
+                <div class="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            
+            <div class="question-container slide-up-fade">
+                <h2 id="question-text">Question goes here?</h2>
+            </div>
+            
+            <div id="input-container" class="slide-up-fade">
+                
+                <div id="slider-wrapper">
+                    <input type="range" id="answer-slider" min="0" max="3" value="0" step="0.01">
+                    <div id="slider-label" class="slider-value-display">0 - Not at all</div>
+                    <button id="next-btn" class="btn primary-btn" onclick="submitSliderAnswer()">Next Question</button>
+                </div>
+
+                <div id="binary-wrapper" class="hidden">
+                    <button class="btn binary-btn" onclick="submitBinaryAnswer(1)">Yes</button>
+                    <button class="btn binary-btn outline" onclick="submitBinaryAnswer(0)">No</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="results-screen" class="sub-screen hidden">
+            <div class="results-card">
+                <h4 class="results-label">Assessment Complete</h4>
+                <h3 id="result-title">Result Title</h3>
+                <div id="result-description">Detailed description goes here...</div>
+            </div>
+            <button class="btn primary-btn" onclick="returnHome()">Return to Dashboard</button>
+        </div>
+    </div>
+
+    <div id="disclaimer-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 class="modal-title">IMPORTANT: CLINICAL DISCLAIMER & TERMS OF USE</h3>
+            <div class="modal-text">
+                <p><strong>1. NOT A DIAGNOSIS:</strong> This assessment is a psychometric screening tool designed for educational and personal reflection purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+                <p><strong>2. EMOTIONAL SAFETY WARNING:</strong> The questions in the Trauma Integration Scale may act as triggers. If you begin to feel overwhelmed, lightheaded, or distressed while taking this test, please stop immediately.</p>
+                <p><strong>3. EMERGENCY RESOURCES:</strong> If you are experiencing a mental health emergency, please contact local services.<br><em>India: Vandrevala Foundation (1860 266 2345) or AASRA (9820466726).</em></p>
+                <p><strong>4. DATA PRIVACY:</strong> All data is handled via client-side execution. No personal responses are stored on external servers.</p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn cancel-btn" onclick="closeDisclaimer()">Decline</button>
+                <button class="btn primary-btn" onclick="acceptDisclaimer()">I Agree</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
